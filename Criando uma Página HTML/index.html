@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Primeiros Passos com HTML</title>
+  </head>
+  <body>
+    <h1 id="inicio">Módulo 1 - Primeiros Passos com HTML</h1>
+    <hr />
+
+    <h2>Índice</h2>
+    <ul>
+      <li>
+        <a href="#Historia">História da Web</a>
+        <ul>
+          <li><a href="#60">Anos 60-70: Guerra Fria dá origem às redes</a></li>
+          <li><a href="#70">Anos 70-80: Surge o termo Internet</a></li>
+          <li><a href="#80">Anos 80-90: Início das grandes redes</a></li>
+          <li><a href="#90">Anos 90-00: O boom da WorldWideWeb</a></li>
+          <li><a href="#Hoje">Anos 00-Hoje: A era da Web 2.0</a></li>
+        </ul>
+      </li>
+      <li><a href="#Clients">O que são Clients?</a></li>
+      <li><a href="#Servers">O que são Servers?</a></li>
+      <li>
+        <a href="#Linguagens">Linguagens de Programação</a>
+        <ul>
+          <li><a href="#tipos">Os tipos de Linguagens</a></li>
+          <li><a href="#side">Client Side x Server Side</a></li>
+        </ul>
+      </li>
+      <li><a href="#HTML">Introdução ao HTML na Prática</a></li>
+      <li><a href="#Links">Links de referências</a></li>
+    </ul>
+
+    <h2 id="Historia">História da Web</h2>
+    <img src="./image/internet-1.jpg" alt="internet" width="100%" />
+    <figcaption>A internet deixou o mundo mais globalizado</figcaption>
+    <p>
+      Em <i>1969</i>, nasceu o princípio básico do que viria a ser uma das
+      grandes invenções do homem no último século.
+    </p>
+    <p>
+      Atualmente, é complicado imaginar a vida sem redes sociais, e-mails e
+      sites de buscas. No entanto, no início da história da
+      <strong>Internet</strong>, o objetivo estava longe de ser negócios ou
+      entretenimento. Tudo começou na área militar dos Estados Unidos, com a
+      intenção de ajudar a proteger o país nas guerras.
+    </p>
+    <p>
+      Para conhecer um pouco mais a fundo a <strong>história</strong> da web
+      veja nesse
+      <a
+        href="https://museudocomputador.org.br/?gclid=CjwKCAiA5sieBhBnEiwAR9oh2tzGFXOBleM_BPQNQqnjmlPgt5kyFVXncWFniuaOXwtDN2z4eJDLcRoCfgIQAvD_BwE"
+        target="_blank"
+        >link</a
+      >
+      sobre o primeiros computadores.
+    </p>
+
+    <h3 id="60">Anos 60-70: Guerra Fria dá origem às redes</h3>
+    <p>
+      Os conceitos militares por trás da Internet começaram a surgir em meados
+      dos anos 50, mas só na década de 60, com o mundo polarizado entre
+      <strong><u>Estados Unidos</u></strong> e <strong><u>URSS</u></strong> que
+      a ideia se desenvolveu. Cientes de poder da comunicação, os EUA criaram um
+      sistema de descentralização de suas informações no Pentágono para evitar
+      que possíveis ataques causassem a perda irreparável de documentos do
+      governo.
+    </p>
+    <p>
+      <mark>Em 1962, o engenheiro
+      <strong
+        ><a
+          href="https://pt.wikipedia.org/wiki/Joseph_Carl_Robnett_Licklider"
+          target="_blank"
+          >Joseph Licklider</a
+        ></strong>, do Instituto Tecnológico de Massachusetts (<a
+        href="https://www.mit.edu/"
+        target="_blank"
+        >MIT</a
+      >), já falava na criação de uma Rede Intergalática de Computadores. Sete
+      anos depois, ficou estabelecido o marco do “nascimento da Internet”, com a
+      criação da ARPANET, a rede de conexão da DARPA, Agência de Projetos de
+      Pesquisa Avançada dos Estados Unidos.
+    </p>
+    <img src="./image/arpa.jpeg" alt="mapa da arpanet" />
+    <figcaption>ARPANET a mãe da Internet</figcaption>
+
+    <h3 id="70">Anos 70-80: Surge o termo Internet</h3>
+    <p>
+      Esta década foi fundamental para a mudança de padrão de conexão que
+      permitiu que os atuais protocolos de Internet nascessem. São os protocolos
+      <a href="https://tecnoblog.net/responde/o-que-e-tcp-ip/" target="_blank"
+        >TCP/IP</a
+      >, vindos de trabalhos experimentais em cooperação entre a DARPA e outras
+      agências.
+    </p>
+    <p>
+      A primeira descrição de protocolos TCP foi feita no ano de 1973, pelos
+      especialistas
+      <a href="https://pt.wikipedia.org/wiki/Vint_Cerf" target="_blank"
+        >Net Vinton Cerf</a
+      >
+      e
+      <a href="https://pt.wikipedia.org/wiki/Robert_Kahn" target="_blank"
+        >Bob Kahn</a
+      >. O uso do termo “Internet” para uma rede TCP/IP global se deu em
+      dezembro de 1974, com a publicação da primeira especificação completa do
+      TCP, assinada por Vinton Cerf,
+      <a
+        href="https://historyofcomputercommunications.info/interviews/yogen-dalal/"
+        target="_blank"
+        >Yogen Dalal</a
+      >
+      e Carl Sunshine, na
+      <a href="https://www.stanford.edu/" target="_blank"
+        >Universidade de Stanford</a
+      >.
+    </p>
+    <img src="./image/1.1.webp" alt="protocolos TCP/IP" />
+    <figcaption>Protocolo TCP/IP</figcaption>
+
+    <h3 id="80">Anos 80-90: Início das grandes redes</h3>
+    <p>
+      O dia 1 de janeiro de 1983 marcou a entrada no ar da primeira rede de
+      grande extensão baseada em TCP/IP. Todos os computadores que usavam a tal
+      ARPANET trocaram os antigos sistemas de pacotes pela nova tecnologia. Dois
+      anos depois, nasceu a
+      <a
+        href="https://en.wikipedia.org/wiki/National_Science_Foundation_Network"
+        target="_blank"
+        >National Science Foundation Network</a
+      >, um conjunto de redes universitárias interconectadas em 56 kilobits por
+      segundo (<i>kbps</i>).
+    </p>
+    <p>
+      O Protocolo de Internet (Internet Protocol) permitia que a transição de
+      dados entre redes. Assim, todas as redes conectadas pelo endereço
+      <a href="https://tecnoblog.net/responde/o-que-e-ip/" target="_blank"
+        >IP</a
+      >
+      na Internet poderiam navegar pelos arquivos e trocar mensagens. Então,
+      nasceram os
+      <a
+        href="https://canaltech.com.br/telecom/o-que-e-backbone/"
+        target="_blank"
+        >backbones</a
+      >, computadores que fazem estas tarefas. Estava estabelecido o modo de
+      conexão.
+    </p>
+    <img src="./image/IP.png" alt="IP" />
+    <figcaption>Internet Protocol</figcaption>
+
+    <h3 id="90">Anos 90-00: O boom da WorldWideWeb</h3>
+    <p>
+      Em 1992, o cientista
+      <a href="https://pt.wikipedia.org/wiki/Tim_Berners-Lee" target="_blank"
+        >Tim Berners-Lee</a
+      >
+      criou a World Wide Web. A rede nasceu na Organização Europeia para a
+      Investigação Nuclear, que propôs a criação dos hipertextos para permitir
+      que várias pessoas trabalhassem juntas acessando os mesmos documentos.
+    </p>
+    <p>
+      Também nos anos 90, a empresa norte-americana
+      <a href="https://pt.wikipedia.org/wiki/Netscape" target="_blank"
+        >Netscape</a
+      >
+      criou um protocolo
+      <a href="https://eixo.digital/o-que-e-https/" target="_blank">HTTPS</a>
+      (HyperText Transfer Protocol Secure), que garante o envio de dados
+      criptografados pela web. Com isso, estava nascendo a Internet atual. E o
+      interesse mundial em torno desta nova ferramenta foi enorme, causando um
+      grande “boom” na década de 90, quando as pessoas começaram a ter PCs e
+      acesso, ainda discado, à grande rede.
+    </p>
+    <img src="./image/www.jpg" alt="www" width="80%" height="400px" />
+    <figcaption>World Wide Web</figcaption>
+
+    <h3 id="Hoje">Anos 00-Hoje: A era da Web 2.0</h3>
+    <p>
+      Após o surgimento da Internet para o público em geral, era necessário
+      consolida-la entre as pessoas. E esta tarefa não foi muito difícil dada às
+      facilidades impostas para aquisição de computadores e também às grandes
+      novidades que a web recebeu nos anos 2000. A tecnologia evoluiu muito e,
+      assim, permitiu avanços significativos.
+    </p>
+    <p>
+      A Internet discada deu lugar à Banda Larga e até à conexão no seu próprio
+      celular, com a rede 3G (e agora 4G). Ao invés de uma ferramenta de difícil
+      acesso e ainda crescendo, a Internet virou praticamente uma necessidade
+      diária, seja no dia a dia das empresas ou na casa de um usuário que busca
+      entretenimento ou faz pesquisas para o dever de casa.
+    </p>
+    <img
+      src="./image/redes-sociais.webp"
+      alt="Redes Sociais"
+      width="50%"
+      height="250px"
+    />
+    <figcaption>Redes Sociais</figcaption>
+    <blockquote>"A web não está concluída, é apenas a ponta do iceberg. As novas mudanças irão balançar o mundo ainda mais."<br />Tim Berners-Lee</blockquote>
+    <abbr title="tim">Tim Berners-Lee</abbr>
+    <small><a href="#inicio">Início</a></small>
+
+    <h2 id="Clients">O que são <i>Clients</i>?</h2>
+    <p>
+      O <i>Client</i> é a parte que interage com o usuário, possui a interface
+      que o usuário utiliza para requisitar as tarefas ao servidor, sendo
+      chamado de <i>front-end</i> da aplicação.
+    </p>
+    <p>
+      O processo <strong>CLIENT</strong> realiza o envio das mensagens fazendo
+      algum pedido ao servidor.
+    </p>
+    <p>
+      Os processos Clients gerenciam as atividades dos usuários e realizam as
+      validações dos dados informados por estes.
+    </p>
+    <img src="./image/clients.png" alt="clients" height="300px"><br />
+    <small><a href="#inicio">Início</a></small>
+
+    <h2 id="Servers">O que são <i>Servers</i>?</h2>
+    <p>
+      É o processo que responde a uma mensagem solicitando a realização de
+      alguma tarefa por parte do <i>Client</i>. O processo servidor é chamado de
+      <i>back-end</i>.
+    </p>
+    <p>
+      O processo <i>Server</i> pode oferecer serviços a muitos clientes, realiza
+      pesquisas, filtragens e atualizações em
+      <a href="https://rockcontent.com/br/blog/banco-de-dados/" target="_blank"
+        >bancos de dados</a
+      >.
+    </p>
+    <p>
+      Os serviços podem ser realizados diretamente pelo processo
+      <i>Server</i> ou através de processos escravos criados por este para
+      atender cada pedido do cliente, o que libera o processo mestre do
+      <i>Server</i> para receber outras solicitações
+    </p>
+    <img src="./image/servers.jpg" alt="servidores" height="300px"><br />
+    <small><a href="#inicio">Início</a></small>
+
+    <h2 id="Linguagens">Linguagens de Programação</h2>
+    <img src="./image/linguagens.png" alt="linguagens de programação" width="50%" height="300px">
+    <p>
+      Você já viu pessoas que trabalham com tecnologia olhando para uma tela com
+      vários códigos que parecem não fazer sentido? Bem, essa é uma linguagem de
+      programação. A expressão se refere a um conjunto de regras e instruções
+      que um programador constrói para gerar programas e softwares que serão
+      processados por um computador, dispositivo móvel ou outro equipamento.
+    </p>
+    <p>
+      Quando estruturada, essa língua forma o código fonte de um software e
+      informa a uma ferramenta quais ações ela deve tomar, por exemplo.
+    </p>
+
+    <h3 id="tipos">Os tipos de Linguagens</h3>
+    <p>
+      Uma linguagem de programação pode ser de nível <i>alto</i> ou
+      <i>baixo</i>. As chamadas de <u>alto nível</u> possuem uma construção
+      linguística que se aproxima mais da forma humana de se comunicar.
+    </p>
+    <p>
+      Já a linguagem de <u>baixo nível</u>, utiliza comandos mais complexos e o
+      código binário, que são sequências combinadas dos números 0 e 1. Isso
+      otimiza a comunicação com a máquina, aumentando a agilidade do processo.
+      Os diferentes tipos funcionam melhor de acordo com o objetivo que se busca
+      atingir.
+    </p>
+    <img src="./image/alto-baixo.png" alt="Alto nível vs Baixo nível" width="50%" height="300px">
+
+    <h3 id="side"><i>Client Side</i> x <i>Server Side</i></h3>
+    <img src="./image/client-side-back-end.png" alt="Client Side vs Server Side">
+    <p>
+      As linguagens <strong>server-side</strong> são linguagens que o
+      <i>SERVIDOR</i> entende. Isso quer dizer que vai escrever um código onde o
+      servidor vai processá-lo e então vai mandar para o seu navegador a
+      resposta. As linguagens <strong>client-side</strong> são linguagens onde
+      apenas o seu <i>NAVEGADOR</i> vai entender.
+    </p>
+    <p>
+      <u><strong>Exemplos: </strong></u>
+    </p>
+    <p>Essas são linguagens <i>Client Side</i></p>
+        <ol>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ol>
+      </li>
+
+      <p>Essas são linguagens <i>Server Side</i></p>
+        <ol>
+          <li>JavaScript</li>
+          <li>Java</li>
+          <li>Python</li>
+          <li>PHP</li>
+        </ol>
+    <small><a href="#inicio">Início</a></small>
+
+    <h2 id="HTML">Introdução ao HTML na Prática</h2>
+    <p>
+      <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML">HTML</a> (Linguagem de Marcação de HiperTexto) é o bloco de construção mais básico da web. Define o significado e a estrutura do conteúdo da web. Outras tecnologias além do HTML geralmente são usadas para descrever a aparência/apresentação (<a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank">CSS</a>) ou a funcionalidade/comportamento (<a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank">JavaScript</a>) de uma página da web.
+    </p>
+    <p>
+      <i>"Hipertexto"</i>refere-se aos links que conectam páginas da Web entre si, seja dentro de um único site ou entre sites. Links são um aspecto fundamental da web. Ao carregar conteúdo na Internet e vinculá-lo a páginas criadas por outras pessoas, você se torna um participante ativo na world wide web.
+    </p>
+    <p>
+      O HTML usa "Marcação" para anotar texto, imagem e outros conteúdos para exibição em um navegador da Web. A marcação HTML inclui "elementos" especiais, como <i>head, title, body, header, footer, article, section, p, div, span, img, aside, audio, canvas, datalist, details, embed, nav, output, progress, video, ul, ol, li</i> e muitos outros.
+    </p>
+    <p>
+      Um elemento HTML é separado de outro texto em um documento por "tags", que consistem no nome do elemento entre "<" e ">". O nome de um elemento dentro de uma tag é insensível a maiúsculas e minúsculas. Isto é, pode ser escrito em maiúsculas, minúsculas ou um mistura.
+    </p>
+    <img src="./image/html.jpeg" alt="hmtl" width="50%" height="300px"><br />
+    <small><a href="#inicio">Início</a></small>
+
+    <h4 id="Links">Links de referências</h4>
+    <img src="./image/links.webp" alt="links" height="300px">
+    <p>
+      Isso é um pouco do conhecimento adquirido, caso queira ter mais conhecimento vou deixar alguns <i>links</i> para pesquisas.
+    </p>
+    <ul>
+      <li><a href="https://developer.mozilla.org/pt-BR/" target="_blank">Recursos para desenvolvedores</a></li>
+      <li><a href="http://w3c.org">WeC</a></li>
+      <li><a href="https://www.hostinger.com.br/blog/a-historia-do-primeiro-site-do-mundo/" target="_blank">A História do Primeiro Site da Internet</a></li>
+    </ul>
+    <h5><a href="#inicio">Início</a></h5>
+  </body>
+  <h6>
+    <footer>Desenvolvido por Valmário Lopes: <a href="https://github.com/Valmario" target="_blank">Github</a>|<a href="https://www.linkedin.com/in/valmariolopes/" target="_blank">LinkedIn</a></footer>
+  </h6>
+</html>
