@@ -1,0 +1,61 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2 {
+  padding: 10px;
+  color: rgb(56, 56, 214);
+}
+
+.sub-block {
+  color: white;
+}
+
+p {
+  padding: 10px;
+}
+
+button {
+  cursor: pointer;
+  margin: 5px;
+}
+
+.numbers {
+  border: 1px solid gray;
+  padding: 10px;
+  list-style-type: none;
+  font-family: monospace;
+  font-size: 20px;
+  text-align: center;
+}
+.number:hover {
+  background-color: lightgreen;
+}
+
+.number {
+  display: inline-block;
+  margin: 10px;
+  border: 1px solid gray;
+  width: 25px;
+  border-radius: 100%;
+  padding: 5px;
+  user-select: none;
+  cursor: pointer;
+}
+
+.selected-number {
+  background-color: green;
+  color: white;
+}
+
+.selected-number:hover {
+  background-color: green;
+  color: white;
+}
+
+.block {
+  background-color: rgb(70, 158, 70);
+  padding: 20px;
+  left: none;
+}
